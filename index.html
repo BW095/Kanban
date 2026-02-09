@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div>
+        <h1>DevDash 🚀</h1>
+        <p><em>Simplicity is the soul</em></p>
+    </div>
+    <div id="buttons">
+        <button id="theme"><span id="mode-emoji"></span> Mode</button>
+        <button id="create-task">+New Task</button>
+    </div>
+</header>
+<div id="overlay">
+    <div id="create-task-box">
+        <p>Add New Taks</p>
+        <form>
+            <input id="task-inp" type="text" placeholder="Task Title (e.g Fix Bug)">
+            <select id="priority">
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            <div>
+                <button id="cancel-task">Cancel</button>
+                <button id="save-task">Save Task</button>
+            </div>
+        </form>
+    </div>
+</div>
+<main>
+    <div id="grid-it">
+        <div class="box">
+            <h4>To Do<span id="todo-span">0</span></h4>
+            <ul id="todo">
+            </ul>
+        </div>
+        <div class="box">
+            <h4>In Progress<span id="progress-span">0</span></h4>
+            <ul id="progress">
+            </ul>
+        </div>
+        <div class="box">
+            <h4>Done<span id="done-span">0</span></h4>
+            <ul id="done">
+            </ul>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
